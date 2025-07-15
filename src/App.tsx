@@ -1,3 +1,4 @@
+import { AnimatePresence } from 'framer-motion';
 import { ContactList } from "@/features/contacts/components/ContactList";
 import { MessagingInterface } from "@/features/messaging/components/MessagingInterface";
 import { Dashboard } from "@/features/dashboard/components/Dashboard";
@@ -6,16 +7,22 @@ import { PersonalOverview } from "@/features/home/components/PersonalOverview";
 import { QuickContacts } from "@/features/home/components/QuickContacts";
 import { QuickActions } from "@/features/home/components/QuickActions";
 import { MissionOverview } from "@/features/home/components/MissionOverview";
+import { Sidebar } from "@/components/layout/Sidebar";
+import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
+import { MobileBottomNav } from "@/components/layout/MobileBottomNav";
 import { convertedTeamProfiles } from "@/data/teamProfilesAdapter";
 import { useAppStore } from "@/store/useAppStore";
+import * as LucideIcons from 'lucide-react';
 
 function App() {
   const { 
     selectedProfileId, 
     selectedDashboard, 
-    currentView, 
+    currentView,
+    isSidebarOpen,
     setSelectedDashboard, 
-    setCurrentView 
+    setCurrentView,
+    toggleSidebar
   } = useAppStore();
   
   const selectedProfile = selectedProfileId
@@ -133,8 +140,63 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      {renderMainContent()}
+    <div className="min-h-screen bg-background text-foreground flex">
+      {/* Desktop Sidebar - Always visible on large screens */}
+      <div className="hidden lg:block">
+        <Sidebar 
+          isOpen={true} 
+          onToggle={toggleSidebar} 
+        />
+      </div>
+
+      {/* Mobile Sidebar Overlay */}
+      <AnimatePresence>
+        {isSidebarOpen && (
+          <div className="lg:hidden">
+            <Sidebar 
+              isOpen={isSidebarOpen} 
+              onToggle={toggleSidebar} 
+            />
+          </div>
+        )}
+      </AnimatePresence>
+
+      {/* Main Content */}
+      <div className="flex-1 flex flex-col min-h-screen">
+        {/* Mobile Header */}
+        <div className="lg:hidden flex items-center justify-between p-4 border-b border-white/10 bg-black/20 backdrop-blur-md">
+          <button
+            onClick={toggleSidebar}
+            className="p-2 rounded-lg hover:bg-white/10 transition-colors"
+          >
+            <LucideIcons.Menu className="w-6 h-6 text-gray-300" />
+          </button>
+          
+          <h1 className="text-lg font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+            OCTO
+          </h1>
+          
+          <button className="p-2 rounded-lg hover:bg-white/10 transition-colors">
+            <LucideIcons.Search className="w-6 h-6 text-gray-300" />
+          </button>
+        </div>
+
+        {/* Content Area */}
+        <div className="flex-1 pb-20 lg:pb-0">
+          {/* Breadcrumbs - Hidden on mobile for profile view */}
+          <div className={`${currentView === 'profile' ? 'hidden lg:block' : 'block'} p-4 lg:p-6`}>
+            <Breadcrumbs />
+          </div>
+          
+          {/* Main Content */}
+          <div className={currentView === 'profile' ? '' : 'px-4 lg:px-6'}>
+            {renderMainContent()}
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile Bottom Navigation */}
+      <MobileBottomNav />
     </div>
   );
 }

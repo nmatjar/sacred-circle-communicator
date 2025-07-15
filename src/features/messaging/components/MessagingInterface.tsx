@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import type { Profile, MCICIntention, MCICAction } from "@/types/profile";
 import IntentionOctagon from './IntentionOctagon';

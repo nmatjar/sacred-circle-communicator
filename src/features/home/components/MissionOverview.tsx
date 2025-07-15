@@ -83,6 +83,7 @@ export const MissionOverview: React.FC = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       className="bg-black/20 backdrop-blur-md border border-white/10 rounded-xl overflow-hidden"
+      data-mission-overview
     >
       {/* Header */}
       <div className="p-6 border-b border-white/10">

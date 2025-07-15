@@ -3,7 +3,7 @@ import type { TeamMember } from "@/types/team";
 import { teamProfiles } from "./teamProfiles";
 
 // Funkcja do parsowania ProfileCoder i konwersji na format Profile
-function parseProfileCoder(profileCoder: string, teamMember: TeamMember): Profile["status"] {
+function parseProfileCoder(teamMember: TeamMember): Profile["status"] {
   // Podstawowe mapowanie statusów na podstawie TeamMember
   const statusMapping = {
     available: "A (Available)",
@@ -274,7 +274,7 @@ function convertTeamMemberToProfile(teamMember: TeamMember): Profile {
     name: teamMember.name,
     archetype: `${teamMember.role} (${teamMember.department})`,
     qpi: Math.random() * 0.3 + 0.7, // QPI między 0.7-1.0
-    status: parseProfileCoder(teamMember.profileCoder, teamMember),
+    status: parseProfileCoder(teamMember),
     intentions: generateIntentions(teamMember)
   };
 }

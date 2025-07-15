@@ -27,7 +27,10 @@ const IntentionOctagon: React.FC<IntentionOctagonProps> = ({
   const octagonPositions = [0, 45, 90, 135, 180, 225, 270, 315];
 
   const getVertexPosition = (index: number, radius: number) => {
-    const angle = (octagonPositions[index] * Math.PI) / 180;
+    // Kąt dla każdej pozycji (0° = góra, 45° = prawy górny róg, itd.)
+    const angle = (index * 45) * Math.PI / 180;
+    // Standardowe wzory dla koła: x = center + radius * cos(angle), y = center + radius * sin(angle)
+    // Ale obracamy o -90° żeby zacząć od góry
     const x = 50 + radius * Math.cos(angle - Math.PI / 2);
     const y = 50 + radius * Math.sin(angle - Math.PI / 2);
     return { x, y };

@@ -1,4 +1,3 @@
-import React from 'react';
 import { SacredDemo } from '@/pages/SacredDemo';
 import './index.css';
 

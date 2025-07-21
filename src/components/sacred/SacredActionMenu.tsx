@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Zap, Clock, Target, Sparkles } from 'lucide-react';
 import type { SacredIntention, SacredAction } from '@/types/sacred';

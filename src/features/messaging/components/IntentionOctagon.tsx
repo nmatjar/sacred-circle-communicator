@@ -114,7 +114,7 @@ const IntentionOctagon: React.FC<IntentionOctagonProps> = ({
             key={intention.id}
             className="absolute transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group"
             style={{
-              left: `${position.x}%`,
+              left: `${position.x - 0.5}%`, // Korekta w lewo
               top: `${position.y}%`,
             }}
             initial={{ opacity: 0, scale: 0.5 }}

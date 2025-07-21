@@ -242,11 +242,13 @@ export const MessagingInterface = ({ profile }: MessagingInterfaceProps) => {
               </div>
               
               <div className="flex justify-center items-center py-12">
+                <div className="flex justify-center items-center py-12">
                 <IntentionOctagon
                   intentions={profile.intentions}
                   selectedIntention={selectedIntention}
                   onIntentionSelect={handleIntentionSelect}
                 />
+              </div>
               </div>
             </div>
             

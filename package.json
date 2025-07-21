@@ -1,8 +1,10 @@
 {
-  "name": "octo-communicator",
+  "name": "sacred-circle-communicator",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "Sacred Circle Communicator - A consciousness festival community platform integrating Slavic and Mayan cultural elements",
+  "keywords": ["consciousness", "festival", "sacred", "slavic", "mayan", "community", "spiritual"],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

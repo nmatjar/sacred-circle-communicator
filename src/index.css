@@ -51,70 +51,82 @@ All colors MUST be HSL for proper theming
 
 @layer base {
   :root {
-    /* AR Interface Background */
-    --background: 220 25% 6%;
-    --foreground: 210 40% 98%;
+    /* Sacred Earth Background */
+    --background: 120 15% 8%;              /* Deep forest green */
+    --foreground: 45 20% 95%;              /* Warm moonlight */
 
-    /* AR Glass Interface */
-    --card: 220 25% 8%;
-    --card-foreground: 210 40% 95%;
+    /* Sacred Natural Interface */
+    --card: 120 20% 12%;                   /* Rich earth */
+    --card-foreground: 45 15% 90%;         /* Soft candlelight */
 
-    --popover: 220 30% 12%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 120 25% 15%;                /* Moss green */
+    --popover-foreground: 45 20% 95%;      /* Pure light */
 
-    /* Primary AR Blue */
-    --primary: 210 100% 56%;
-    --primary-foreground: 220 25% 6%;
+    /* Primary Sacred Gold */
+    --primary: 45 85% 55%;                 /* Solar gold */
+    --primary-foreground: 120 15% 8%;      /* Deep earth */
 
-    /* Secondary Neural Network Purple */
-    --secondary: 260 60% 45%;
-    --secondary-foreground: 210 40% 98%;
+    /* Secondary Amethyst Purple */
+    --secondary: 270 45% 35%;              /* Sacred amethyst */
+    --secondary-foreground: 45 20% 95%;    /* Light essence */
 
-    /* Muted Glass Effect */
-    --muted: 220 25% 15%;
-    --muted-foreground: 215 20% 65%;
+    /* Muted Natural Effect */
+    --muted: 120 15% 20%;                  /* Stone gray */
+    --muted-foreground: 45 10% 65%;        /* Gentle light */
 
-    /* Accent Cyber Orange */
-    --accent: 25 95% 60%;
-    --accent-foreground: 220 25% 6%;
+    /* Accent Sky Blue */
+    --accent: 200 70% 60%;                 /* Clear sky */
+    --accent-foreground: 120 15% 8%;       /* Earth base */
 
-    /* Destructive AR Red */
-    --destructive: 0 75% 55%;
-    --destructive-foreground: 210 40% 98%;
+    /* Destructive Fire Red */
+    --destructive: 0 65% 50%;              /* Sacred fire */
+    --destructive-foreground: 45 20% 95%;  /* Pure light */
 
-    /* AR Interface Borders */
-    --border: 220 25% 20%;
-    --input: 220 25% 15%;
-    --ring: 210 100% 56%;
+    /* Sacred Interface Borders */
+    --border: 120 20% 25%;                 /* Natural border */
+    --input: 120 15% 18%;                  /* Input earth */
+    --ring: 45 85% 55%;                    /* Golden ring */
 
-    /* MCIC Intention States */
-    --intention-optimal: 120 60% 50%;      /* Green - High match */
-    --intention-moderate: 45 95% 55%;      /* Yellow - Medium match */
-    --intention-poor: 0 75% 55%;           /* Red - Low match */
-    --intention-disabled: 220 15% 35%;     /* Gray - Not available */
+    /* Sacred Intention States */
+    --intention-optimal: 120 50% 45%;      /* Forest green - High resonance */
+    --intention-moderate: 45 75% 50%;      /* Amber - Medium resonance */
+    --intention-poor: 15 60% 45%;          /* Clay red - Low resonance */
+    --intention-disabled: 120 10% 30%;     /* Stone gray - Not available */
 
-    /* AR Glow Effects */
-    --glow-primary: 210 100% 56%;
-    --glow-success: 120 60% 50%;
-    --glow-warning: 45 95% 55%;
-    --glow-danger: 0 75% 55%;
+    /* Sacred Glow Effects */
+    --glow-primary: 45 85% 55%;            /* Golden glow */
+    --glow-success: 120 50% 45%;           /* Earth success */
+    --glow-warning: 45 75% 50%;            /* Amber warning */
+    --glow-danger: 0 65% 50%;              /* Fire danger */
 
-    /* Neural Network Gradients */
-    --gradient-neural: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
-    --gradient-intention: linear-gradient(180deg, hsl(var(--card)), hsl(var(--muted)));
-    --gradient-glow: radial-gradient(circle, hsl(var(--glow-primary) / 0.3), transparent);
+    /* Sacred Natural Gradients */
+    --gradient-sacred: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-earth: linear-gradient(180deg, hsl(var(--card)), hsl(var(--muted)));
+    --gradient-lunar: radial-gradient(circle, hsl(var(--glow-primary) / 0.2), transparent);
 
-    /* AR Glass Effects */
-    --glass-backdrop: hsl(var(--card) / 0.8);
-    --glass-border: hsl(var(--border) / 0.3);
-    --glass-shadow: 0 8px 32px hsl(var(--primary) / 0.1);
+    /* Sacred Glass Effects */
+    --glass-backdrop: hsl(var(--card) / 0.85);
+    --glass-border: hsl(var(--border) / 0.4);
+    --glass-shadow: 0 8px 32px hsl(var(--primary) / 0.15);
 
-    /* Animations */
-    --transition-neural: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-intention: all 0.4s cubic-bezier(0.2, 0, 0.2, 1);
-    --transition-glow: all 0.6s cubic-bezier(0.4, 0, 0.6, 1);
+    /* Sacred Animations */
+    --transition-sacred: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-intention: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    --transition-glow: all 0.8s cubic-bezier(0.4, 0, 0.6, 1);
 
-    --radius: 0.5rem;
+    /* Sacred Elements */
+    --element-earth: 30 25% 25%;           /* Earth element */
+    --element-water: 200 60% 45%;          /* Water element */
+    --element-fire: 15 80% 55%;            /* Fire element */
+    --element-air: 60 40% 70%;             /* Air element */
+
+    /* Lunar Phases */
+    --moon-new: 240 15% 15%;               /* New moon */
+    --moon-waxing: 45 30% 40%;             /* Waxing moon */
+    --moon-full: 45 85% 85%;               /* Full moon */
+    --moon-waning: 270 25% 50%;            /* Waning moon */
+
+    --radius: 0.75rem;
   }
 
   .dark {
@@ -155,7 +167,7 @@ All colors MUST be HSL for proper theming
   }
 }
 
-/* Custom AR Glass Classes */
+/* Sacred Natural Classes */
 @layer utilities {
   .bg-glass-backdrop {
     background: var(--glass-backdrop);
@@ -167,5 +179,158 @@ All colors MUST be HSL for proper theming
   
   .shadow-ar-glass {
     box-shadow: var(--glass-shadow);
+  }
+
+  /* Sacred Element Classes */
+  .bg-element-earth {
+    background: hsl(var(--element-earth));
+  }
+  
+  .bg-element-water {
+    background: hsl(var(--element-water));
+  }
+  
+  .bg-element-fire {
+    background: hsl(var(--element-fire));
+  }
+  
+  .bg-element-air {
+    background: hsl(var(--element-air));
+  }
+
+  /* Sacred Lunar Classes */
+  .bg-moon-new {
+    background: hsl(var(--moon-new));
+  }
+  
+  .bg-moon-waxing {
+    background: hsl(var(--moon-waxing));
+  }
+  
+  .bg-moon-full {
+    background: hsl(var(--moon-full));
+  }
+  
+  .bg-moon-waning {
+    background: hsl(var(--moon-waning));
+  }
+
+  /* Sacred Gradients */
+  .bg-gradient-sacred {
+    background: var(--gradient-sacred);
+  }
+  
+  .bg-gradient-earth {
+    background: var(--gradient-earth);
+  }
+  
+  .bg-gradient-lunar {
+    background: var(--gradient-lunar);
+  }
+
+  /* Sacred Animations */
+  .transition-sacred {
+    transition: var(--transition-sacred);
+  }
+  
+  .transition-intention {
+    transition: var(--transition-intention);
+  }
+  
+  .transition-glow {
+    transition: var(--transition-glow);
+  }
+
+  /* Sacred Intention States */
+  .text-intention-optimal {
+    color: hsl(var(--intention-optimal));
+  }
+  
+  .text-intention-moderate {
+    color: hsl(var(--intention-moderate));
+  }
+  
+  .text-intention-poor {
+    color: hsl(var(--intention-poor));
+  }
+  
+  .text-intention-disabled {
+    color: hsl(var(--intention-disabled));
+  }
+
+  .border-intention-optimal {
+    border-color: hsl(var(--intention-optimal));
+  }
+  
+  .border-intention-moderate {
+    border-color: hsl(var(--intention-moderate));
+  }
+  
+  .border-intention-poor {
+    border-color: hsl(var(--intention-poor));
+  }
+  
+  .border-intention-disabled {
+    border-color: hsl(var(--intention-disabled));
+  }
+
+  .shadow-intention-glow {
+    box-shadow: 0 0 20px hsl(var(--glow-primary) / 0.3);
+  }
+
+  /* Sacred Organic Animations */
+  .animate-sacred-pulse {
+    animation: sacred-pulse 3s ease-in-out infinite;
+  }
+  
+  .animate-sacred-float {
+    animation: sacred-float 6s ease-in-out infinite;
+  }
+  
+  .animate-sacred-rotate {
+    animation: sacred-rotate 60s linear infinite;
+  }
+  
+  .animate-intention-glow {
+    animation: intention-glow 2s ease-in-out infinite alternate;
+  }
+}
+
+/* Sacred Keyframe Animations */
+@keyframes sacred-pulse {
+  0%, 100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes sacred-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes sacred-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes intention-glow {
+  from {
+    box-shadow: 0 0 10px hsl(var(--glow-primary) / 0.3);
+  }
+  to {
+    box-shadow: 0 0 30px hsl(var(--glow-primary) / 0.6);
   }
 }

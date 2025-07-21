@@ -1,10 +1,163 @@
 <!doctype html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Sacred Circle Communicator - Platforma Komunikacyjna dla Festiwali Świadomościowych</title>
+    <meta name="title" content="Sacred Circle Communicator - Platforma Komunikacyjna dla Festiwali Świadomościowych" />
+    <meta name="description" content="Pierwsza platforma komunikacyjna dla społeczności festiwali świadomościowych. Łącząc dusze przez starożytną mądrość i nowoczesną technologię. Burning Man, Wibracje, ziołolecznictwo, ceremonie." />
+    <meta name="keywords" content="festiwale świadomościowe, burning man, wibracje, ziołolecznictwo, ceremonie, komunikacja duchowa, społeczność festiwalowa, sacred circle, święty krąg, intencje, uzdrawianie, szamanizm, słowiańskie tradycje, majańska mądrość, transformacja, świadomość, natura, masaże, zdrowie, głagolica, festiwal, gathering, conscious festival, transformational festival" />
+    <meta name="author" content="Mateusz Jarosiewicz" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="Polish" />
+    <meta name="revisit-after" content="7 days" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sacred-circle-communicator.netlify.app/" />
+    <meta property="og:title" content="Sacred Circle Communicator - Platforma Komunikacyjna dla Festiwali Świadomościowych" />
+    <meta property="og:description" content="Pierwsza platforma komunikacyjna dla społeczności festiwali świadomościowych. Łącząc dusze przez starożytną mądrość i nowoczesną technologię." />
+    <meta property="og:image" content="https://sacred-circle-communicator.netlify.app/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Sacred Circle Communicator - Święty Krąg Intencji" />
+    <meta property="og:site_name" content="Sacred Circle Communicator" />
+    <meta property="og:locale" content="pl_PL" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://sacred-circle-communicator.netlify.app/" />
+    <meta property="twitter:title" content="Sacred Circle Communicator - Platforma Komunikacyjna dla Festiwali Świadomościowych" />
+    <meta property="twitter:description" content="Pierwsza platforma komunikacyjna dla społeczności festiwali świadomościowych. Łącząc dusze przez starożytną mądrość i nowoczesną technologię." />
+    <meta property="twitter:image" content="https://sacred-circle-communicator.netlify.app/og-image.jpg" />
+    <meta property="twitter:image:alt" content="Sacred Circle Communicator - Święty Krąg Intencji" />
+    <meta property="twitter:creator" content="@mateuszjarosiewicz" />
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#8B5CF6" />
+    <meta name="msapplication-TileColor" content="#8B5CF6" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://sacred-circle-communicator.netlify.app/" />
+    
+    <!-- Alternative Languages -->
+    <link rel="alternate" hreflang="pl" href="https://sacred-circle-communicator.netlify.app/" />
+    <link rel="alternate" hreflang="en" href="https://sacred-circle-communicator.netlify.app/en/" />
+    <link rel="alternate" hreflang="x-default" href="https://sacred-circle-communicator.netlify.app/" />
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Structured Data - Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Sacred Circle Communicator",
+      "description": "Platforma komunikacyjna dla społeczności festiwali świadomościowych",
+      "url": "https://sacred-circle-communicator.netlify.app/",
+      "logo": "https://sacred-circle-communicator.netlify.app/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "mateusz@inteligentnakariera.pl",
+        "contactType": "customer service"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Mateusz Jarosiewicz",
+        "email": "mateusz@inteligentnakariera.pl"
+      },
+      "sameAs": [
+        "https://github.com/nmatjar/sacred-circle-communicator"
+      ]
+    }
+    </script>
+    
+    <!-- Structured Data - WebApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Sacred Circle Communicator",
+      "description": "Pierwsza platforma komunikacyjna dla społeczności festiwali świadomościowych. Łącząc dusze przez starożytną mądrość i nowoczesną technologię.",
+      "url": "https://sacred-circle-communicator.netlify.app/",
+      "applicationCategory": "CommunicationApplication",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "PLN"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Mateusz Jarosiewicz",
+        "email": "mateusz@inteligentnakariera.pl"
+      },
+      "keywords": "festiwale świadomościowe, burning man, wibracje, ziołolecznictwo, ceremonie, komunikacja duchowa",
+      "screenshot": "https://sacred-circle-communicator.netlify.app/screenshot.jpg"
+    }
+    </script>
+    
+    <!-- Structured Data - Event (for festivals) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "@id": "https://sacred-circle-communicator.netlify.app/#festivals",
+      "name": "Festiwale Świadomościowe 2025",
+      "description": "Platforma łącząca uczestników festiwali świadomościowych takich jak Burning Man, Wibracje, Ozora i innych transformacyjnych wydarzeń.",
+      "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "startDate": "2025-01-01",
+      "endDate": "2025-12-31",
+      "location": {
+        "@type": "VirtualLocation",
+        "url": "https://sacred-circle-communicator.netlify.app/"
+      },
+      "organizer": {
+        "@type": "Person",
+        "name": "Mateusz Jarosiewicz",
+        "email": "mateusz@inteligentnakariera.pl"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "PLN",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
+    
+    <!-- Additional Meta for Festival/Wellness Content -->
+    <meta name="category" content="Health & Wellness, Festivals, Spirituality" />
+    <meta name="coverage" content="Worldwide" />
+    <meta name="distribution" content="Global" />
+    <meta name="rating" content="General" />
+    <meta name="copyright" content="© 2025 Sacred Circle Communicator" />
+    
+    <!-- Geo Tags for Poland/Europe -->
+    <meta name="geo.region" content="PL" />
+    <meta name="geo.country" content="Poland" />
+    <meta name="geo.placename" content="Poland" />
+    <meta name="ICBM" content="52.0693, 19.4803" />
+    
+    <!-- Mobile App Meta -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Sacred Circle" />
+    
+    <!-- Favicon and Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#8B5CF6" />
   </head>
   <body>
     <div id="root"></div>

@@ -506,4 +506,9 @@ Together, we're building the future of professional communication. Welcome aboar
 
 ---
 
+## 📧 **Contact & Collaboration**
+
+For partnerships, spiritual guidance, or sacred technology collaboration:
+**[mateusz@inteligentnakariera.pl](mailto:mateusz@inteligentnakariera.pl)**
+
 *For questions about contributing, reach out to: contributors@octo-communicator.dev*

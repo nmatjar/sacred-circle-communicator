@@ -242,6 +242,13 @@ Sacred Circle Communicator is more than software - it's a **new way of being** i
 
 ---
 
+## 📧 **Contact & Collaboration**
+
+For partnerships, spiritual guidance, or sacred technology collaboration:
+**[mateusz@inteligentnakariera.pl](mailto:mateusz@inteligentnakariera.pl)**
+
+---
+
 *Built with 💚 by the Sacred Circle Team | Powered by Ancient Wisdom & Modern Love*
 
 ## 🌿 Cultural Acknowledgments

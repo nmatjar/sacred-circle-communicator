@@ -162,6 +162,20 @@ const SacredInfo: React.FC = () => {
                   Tutaj każda rozmowa to ceremonia, każde spotkanie to święty rytuał, 
                   a każde połączenie to krok ku wyższej świadomości.
                 </p>
+                
+                <div className="mt-4 p-4 bg-slate-800/50 rounded-lg border border-amber-500/20">
+                  <h4 className="text-amber-400 font-semibold mb-2">📧 Kontakt & Współpraca</h4>
+                  <p className="text-gray-300 text-sm mb-2">
+                    Dla partnerstwa, duchowego przewodnictwa lub współpracy przy świętej technologii:
+                  </p>
+                  <a 
+                    href="mailto:mateusz@inteligentnakariera.pl"
+                    className="text-amber-300 hover:text-amber-200 font-medium underline transition-colors"
+                  >
+                    mateusz@inteligentnakariera.pl
+                  </a>
+                </div>
+                
                 <p className="text-amber-300 mt-3 font-semibold">
                   Niech Twoja podróż będzie błogosławiona. 🙏
                 </p>

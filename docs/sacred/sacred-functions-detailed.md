@@ -116,3 +116,10 @@ Wszystkie cztery funkcje współpracują ze sobą, tworząc kompleksowy ekosyste
 - **Majańska mądrość** - oktagonalna geometria świętej przestrzeni
 - **Współczesne festiwale** - Burning Man, europejskie gatherings
 - **Praktyki rdzenne** - szacunek dla natury, wspólnotowość, rytualność
+
+---
+
+## 📧 Kontakt & Współpraca
+
+Dla partnerstwa, duchowego przewodnictwa lub współpracy przy świętej technologii:
+**[mateusz@inteligentnakariera.pl](mailto:mateusz@inteligentnakariera.pl)**

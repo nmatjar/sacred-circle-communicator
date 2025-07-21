@@ -535,7 +535,11 @@ Sacred Circle Protocol (SCP) over LoRa
 
 *Sacred Circle Hardware Communicator - Łącząc serca i dusze przez technologię inspirowaną starożytną mądrością* 🌿✨
 
-**Kontakt**: sacred-circle@example.com  
+## 📧 Kontakt & Współpraca
+
+Dla partnerstwa, duchowego przewodnictwa lub współpracy przy świętej technologii:
+**[mateusz@inteligentnakariera.pl](mailto:mateusz@inteligentnakariera.pl)**
+
 **Repository**: https://github.com/sacred-circle/hardware-communicator  
 **Community**: https://discord.gg/sacred-circle
 

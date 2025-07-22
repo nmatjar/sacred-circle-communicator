@@ -70,6 +70,28 @@ export function SacredDemo() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      {/* Concept Notice */}
+      <motion.div
+        className="bg-amber-900/20 border-b border-amber-500/30 py-3"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        <div className="container mx-auto px-4 text-center">
+          <div className="flex items-center justify-center gap-2 text-amber-200">
+            <span className="text-lg">✨</span>
+            <span className="text-sm font-medium">
+              KONCEPCJA WIZJI - Osoby i wydarzenia nie są powiązane z prawdziwymi. 
+              Działam w przestrzeni, żeby razem zmaterializować tą wizję.
+            </span>
+            <span className="text-lg">✨</span>
+          </div>
+          <div className="mt-1 text-xs text-amber-300/80">
+            Kontakt: mateusz@inteligentnakariera.pl - Współtwórzmy przyszłość komunikacji festiwalowej
+          </div>
+        </div>
+      </motion.div>
+
       {/* Sacred Header */}
       <motion.header
         className="bg-gradient-sacred text-primary-foreground py-8"
